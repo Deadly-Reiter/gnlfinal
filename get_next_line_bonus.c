@@ -6,14 +6,14 @@
 /*   By: eborunov <eborunov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/04 16:57:39 by eborunov          #+#    #+#             */
-/*   Updated: 2023/02/04 17:21:56 by eborunov         ###   ########.fr       */
+/*   Updated: 2023/02/04 19:34:43 by eborunov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 
 #include "get_next_line_bonus.h"
 
-char	*ft_readed_line(char *start)
+char	*ft_reader(char *start)
 {
 	int		i;
 	char	*line;
@@ -40,7 +40,7 @@ char	*ft_readed_line(char *start)
 	return (line);
 }
 
-char	*ft_move_start(char	*start)
+char	*ft_start(char	*start)
 {
 	char	*new_buff;
 	int		i;
@@ -93,7 +93,7 @@ char	*get_next_line(int fd)
 		start_str[fd] = ft_strjoin(start_str[fd], tmp);
 	}
 	free(tmp);
-	tmp = ft_readed_line(start_str[fd]);
-	start_str[fd] = ft_move_start(start_str[fd]);
+	tmp = ft_reader(start_str[fd]);
+	start_str[fd] = ft_start(start_str[fd]);
 	return (tmp);
 }
