@@ -6,7 +6,7 @@
 /*   By: eborunov <eborunov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/04 16:58:08 by eborunov          #+#    #+#             */
-/*   Updated: 2023/02/04 19:34:52 by eborunov         ###   ########.fr       */
+/*   Updated: 2023/02/08 19:41:46 by eborunov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,8 @@
 
 # include <stdlib.h>
 # include <unistd.h>
+
+# define BUFFER_SIZE 10
 
 size_t	ft_strlen(char *str);
 char	*get_next_line(int fd);

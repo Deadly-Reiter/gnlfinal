@@ -6,10 +6,9 @@
 /*   By: eborunov <eborunov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/04 16:57:39 by eborunov          #+#    #+#             */
-/*   Updated: 2023/02/04 19:34:43 by eborunov         ###   ########.fr       */
+/*   Updated: 2023/02/08 19:49:33 by eborunov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 #include "get_next_line_bonus.h"
 
